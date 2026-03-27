@@ -55,15 +55,15 @@ This project is designed to practice and improve skills in:
 ```cpp
 #include <iostream>
 #include "clsString.h"
-
+using namespace std;
 int main() {
     // Using Object Methods
     clsString String1("abdulrahman ramadan");
     String1.UpperFirstLetterOfEachWord();
-    std::cout << String1.Value << std::endl; // Output: Abdulrahman Ramadan
+    cout << String1.Value << endl; // Output: Abdulrahman Ramadan
 
     // Using Static Methods
-    std::cout << clsString::CountWords("Hello World from C++") << std::endl; // Output: 4
+    cout << clsString::CountWords("Hello World from C++") << endl; // Output: 4
 
     return 0;
 }
